@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index/style.css') }}"> 
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container">
+            <h1 class="text-center">Modelos simples de ML</h1>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('MainView:about') }}">Página inicial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('MainView:about') }}">Sobre Mim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('MainView:projects') }}">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('MainView:contact') }}">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('MainView:piloto') }}">Pilots</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('MainView:one') }}">Pilots</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Título da Seção</h2>
+                <p class="text-center mb-4">Breve descrição da seção.</p>
+                <a href="{{ url_for('MainView:projects') }}" id="house-animate-btn" class="btn btn-primary">Saiba Mais</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Sobre Mim</h2>
+                <p class="text-center">Conteúdo sobre você, seus objetivos, etc.</p>
+            </div>
+        </section>
+
+        <section id="projects" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Meus Projetos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imagem-do-projeto1.jpg" class="card-img-top" alt="Nome do Projeto 1">
+                            <div class="card-body">
+                                <h3 class="card-title">Nome do Projeto 1</h3>
+                                <p class="card-text">Breve descrição do projeto 1.</p>
+                                <a href="{{ url_for('MainView:one') }}" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imagem-do-projeto2.jpg" class="card-img-top" alt="Nome do Projeto 2">
+                            <div class="card-body">
+                                <h3 class="card-title">Nome do Projeto 2</h3>
+                                <p class="card-text">Breve descrição do projeto 2.</p>
+                                <a href="{{ url_for('MainView:projects') }}" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="imagem-do-projeto3.jpg" class="card-img-top" alt="Nome do Projeto 3">
+                            <div class="card-body">
+                                <h3 class="card-title">Nome do Projeto 3</h3>
+                                <p class="card-text">Breve descrição do projeto 3.</p>
+                                <a href="{{ url_for('MainView:projects') }}" class="btn btn-primary">Saiba Mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-3">
+        <div class="container">
+            <p class="text-center">&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

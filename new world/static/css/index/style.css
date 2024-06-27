@@ -1,0 +1,150 @@
+/* stylelint-disable @stylistic/selector-list-comma-newline-after */
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-size: 2.25rem;
+  }
+  
+  .blog-header-logo:hover {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  }
+  
+  .flex-auto {
+    flex: 0 0 auto;
+  }
+  
+  .h-250 { height: 250px; }
+  @media (min-width: 768px) {
+    .h-md-250 { height: 250px; }
+  }
+  
+  /* Pagination */
+  .blog-pagination {
+    margin-bottom: 4rem;
+  }
+  
+  /*
+   * Blog posts
+   */
+  .blog-post {
+    margin-bottom: 4rem;
+  }
+  .blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+  }
+  
+  .animated-button {
+    transition: transform 0.3s ease-in-out; /* Add a smooth transition */
+  }
+  
+  .animated-button:hover {
+    transform: scale(1.1); /* Make the button slightly larger on hover */
+  }
+  
+ 
+  /* Estilos para o header */
+header {
+  background-color: #f8f9fa;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-left: 15px;
+}
+
+.nav-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para a seção hero */
+#hero {
+  background-color: #e9ecef;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+#hero .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Estilos para a seção sobre */
+#about {
+  padding: 60px 0;
+  text-align: center;
+  background-color: blueviolet;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+#about p {
+  font-size: 1.1rem;
+}
+
+/* Estilos para a seção projetos */
+#projects {
+  padding: 60px 0;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
+}
+
+.card img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
